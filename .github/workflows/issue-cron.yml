@@ -1,0 +1,34 @@
+name: issue-cron
+
+on:
+  schedule:
+    - cron: '0 0 1 1,4,7,10 *'
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  create-profile-update-issue:
+    name: Create Profile Update Issue
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Create GitHub Issue
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const now = new Date();
+            const year = now.getFullYear();
+            const quarter = Math.floor((now.getMonth() / 3) + 1);
+            const title = `📝 ${year} Q${quarter} プロフィールを更新してください`;
+            const body = `## ${year} Q${quarter} のプロフィール更新\n\n`;
+
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: title,
+              body: body
+            });
