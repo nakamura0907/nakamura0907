@@ -2,6 +2,36 @@
 
 ## 基本情報
 
+### 保有スキル
+
+- 言語
+  - TypeScript: 4年（業務経験: 4ヶ月）
+  - Go: 2年
+  - C#: 業務経験: 8ヶ月
+  - 触ったことがある
+    - Rust
+    - PHP
+- フレームワークほか
+  - Next.js
+  - React
+  - Node.js
+  - 触ったことがある
+    - Flutter
+    - Gatsby.js
+- OS・ディストリビューション
+  - Arch Linux
+  - Nix OS
+  - Proxmox VE: 自宅サーバーに採用
+- クラウド
+  - AWS
+    - Amazon Lightsailによる技術ブログ: 数ヶ月
+- コンテナ技術
+  - Docker: 個人開発に使用
+  - Kubernetes・K3s: 自宅サーバーに採用
+- CI/CD
+  - GitHub Actions
+  - Flux CD
+
 ### 資格・賞与
 
 - 情報処理安全確保支援士試験 合格（未登録）
