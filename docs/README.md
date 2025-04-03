@@ -15,6 +15,7 @@
   - Next.js
   - React
   - Node.js
+  - .Net Core: 業務経験: 8ヶ月
   - 触ったことがある
     - Flutter
     - Gatsby.js
