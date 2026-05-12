@@ -1,3 +1,9 @@
+
+<div align="center">
+  <a href="http://qiita.com/nakamura0907"><img src="https://qiita-badge.apiapi.app/s/nakamura0907/posts.svg" /></a>
+  <a href="http://qiita.com/nakamura0907"><img src="https://qiita-badge.apiapi.app/s/nakamura0907/contributions.svg" /></a>
+</div>
+
 ### My Organizations
 
 <ul>
